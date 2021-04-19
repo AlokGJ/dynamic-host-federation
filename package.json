@@ -1,0 +1,24 @@
+{
+  "name": "dynamic-host-federation",
+  "version": "1.0.0",
+  "description": "Dynamic host federation loads the module when the host doesn't know the remote hosts at the time of webpack build",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlokGJ/dynamic-host-federation.git"
+  },
+  "keywords": [],
+  "author": "AlokGJ <alok88joshi@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlokGJ/dynamic-host-federation/issues"
+  },
+  "homepage": "https://github.com/AlokGJ/dynamic-host-federation#readme",
+  "peerDependencies": {
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  }
+}
