@@ -1,6 +1,6 @@
 {
   "name": "dynamic-host-federation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Dynamic host federation loads the module when the host doesn't know the remote hosts at the time of webpack build",
   "main": "index.js",
   "scripts": {
