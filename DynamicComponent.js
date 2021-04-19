@@ -3,23 +3,23 @@ import useInjectScript from './helpers/useInjectScript';
 import resolveModule from './helpers/resolveModule';
 const DynamicComponent = (props) => {
     const { scriptReady, scriptFailed } = useInjectScript({
-      url: props.system && props.system.url,
+      url: props.config && props.config.url,
     });
   
-    if (!props.system) {
-      return <h2>Not system specified</h2>;
+    if (!props.config) {
+      return <h2>No Config specified</h2>;
     }
   
     if (!scriptReady) {
-      return <h2>Loading dynamic script: {props.system.url}</h2>;
+      return <h2>Loading dynamic script: {props.config.url}</h2>;
     }
   
     if (scriptFailed) {
-      return <h2>Failed to load dynamic script: {props.system.url}</h2>;
+      return <h2>Failed to load dynamic script: {props.config.url}</h2>;
     }
   
     const Component = lazy(
-        resolveModule(props.system.scope, props.system.module)
+        resolveModule(props.config.scope, props.config.module)
     );
   
     return (
