@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const useInjectScript = (args) => {
     const [scriptReady, setScriptReady] = React.useState(false);
     const [scriptFailed, setScriptFailed] = React.useState(false);
 
-    React.useEffect(() => {
+    useEffect(() => {
         if (!args.url) {
             return;
         }
