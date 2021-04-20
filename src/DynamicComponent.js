@@ -7,7 +7,7 @@ const DynamicComponent = (props) => {
     });
   
     if (!props.config) {
-      return <h2>No Config specified</h2>;
+      return (<h2>No Config specified</h2>);
     }
   
     if (!scriptReady) {
