@@ -1,7 +1,7 @@
 import loadModule from './helpers/resolveModule';
 import useInjectScript from './helpers/useInjectScript';
 
-export {
+export default {
     loadModule,
     useInjectScript
 };
