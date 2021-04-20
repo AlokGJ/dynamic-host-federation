@@ -4,8 +4,7 @@
   "description": "Dynamic host federation loads the module when the host doesn't know the remote hosts at the time of webpack build",
   "main": "./dist/main.js",
   "scripts": {
-    "build": "webpack",
-    "postinstall": "webpack"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
