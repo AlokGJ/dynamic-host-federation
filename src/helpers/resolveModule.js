@@ -1,10 +1,7 @@
 const resolveModule = (scope, module) => 
     () =>
         window[scope].get(`./${module}`)
-            .then((factory) => {
-                const Module = factory();
-                return Module;
-            })
+            .then((factory) => factory())
             .catch((error) => {
                 console.error(error);
             });
